@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/mbut">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Set Appointment"
+            android:id="@+id/textView2" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_note"
+                    android:text="Patient Id : "/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/pat_id"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_name"
+                    android:text="Enter Patient Name :"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/pat_name"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_reason"
+                    android:text="Reason:"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/pat_reason"
+
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_contact"
+                    android:text="Enter Contact # : "/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:id="@+id/pat_contact"
+                    android:layout_weight="1" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_date"
+                    android:text="Date:"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:hint="mm/dd/yyyy"
+                    android:id="@+id/pat_date"
+                    android:layout_weight="1" />
+
+
+
+
+
+            </TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/conform_appo"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape2"
+                android:text="CONFIRM APPOINTMENT"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/calender_add"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape2"
+                android:text="ADD TO CALENDAR"
+                android:layout_marginTop="20dp"/>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

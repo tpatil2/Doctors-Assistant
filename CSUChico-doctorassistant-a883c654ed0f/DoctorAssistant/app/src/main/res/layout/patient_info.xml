@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/blue"
+android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Patient's Information"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/textView2" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+
+                android:id="@+id/pat_id1"
+                android:hint="Enter Patient ID"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/patient_search"
+                android:text="SEARCH "
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape2"
+                />
+
+
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nametxt"
+                android:layout_marginTop="10dp "
+                android:text="Patient Name :"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:id="@+id/nameetxt"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addresstxt"
+                android:text="Address : "/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/addressetxt"
+
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contacttxt"
+                android:text="Contact # : "/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/contactetxt"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailtxt"
+                android:text="Email ID : "/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailetxt"
+                android:layout_weight="1" />
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notestxt"
+                android:text="Gender : "/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/notesetxt"
+                android:layout_weight="1" />
+
+
+        </TableRow>>
+
+
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dobtxt"
+                android:text="Date of Birth : "/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:id="@+id/dobetxt"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notestxt"
+                android:text="Clinical Notes : "/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/notesetxt"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/ueditpatient"
+            android:text="EDIT PATIENT"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/Bhhome"
+            android:text="Homepage"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape"
+            android:layout_marginTop="20dp"/>
+
+    </TableLayout>
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android_project.com.doctorassistant" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactUs"/>
+        <activity android:name=".Makeappointment"/>
+        <activity android:name=".Mainpage_appointment"/>
+        <activity android:name=".Billing"/>
+        <activity android:name=".BillingInfo"/>
+        <activity android:name=".welcome2"/>
+        <activity android:name=".Edit_patient_info"/>
+        <activity android:name=".Patient_Info"/>
+        <activity android:name=".Patient_Search"/>
+        <activity android:name=".Bill_search"/>
+
+        <activity android:name=".ViewAppointment"/>
+        <activity android:name=".EditAppointment"/>
+        <activity android:name=".homepage"/>
+        <activity android:name=".AddPatient"/>
+        <activity android:name=".registration"
+            android:label="Register New Account"></activity>
+    <activity android:name=".DoctorLogin"/>
+    </application>
+
+</manifest>

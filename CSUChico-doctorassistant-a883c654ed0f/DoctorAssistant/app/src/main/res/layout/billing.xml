@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/blue">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/textView2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Add Billing Information"
+            android:id="@+id/textView2"
+            android:layout_marginTop="20dp"/>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:id="@+id/biq">
+
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/aa">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_bal"
+                    android:text="Patient ID"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/pat_bal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_add_amount"
+                    android:text="Add Amount:"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/pat_add_amount"
+
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_date_bill"
+                    android:text="Date:"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:hint="mm/dd/yyyy"
+                    android:id="@+id/pat_date_bill"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/conform_bill"
+                android:background="@drawable/shape2"
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"/>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_total"
+                    android:text="Total Amount: "
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/pat_total"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"/>
+            </TableRow>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/show_bill"
+                android:text="Detail billing Info"
+                android:background="@drawable/shape2"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+ </ScrollView>

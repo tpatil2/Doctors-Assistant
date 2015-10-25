@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/blue"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Detail Billing information"
+            android:id="@+id/textView2"
+            android:layout_marginTop="25dp"/>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/today_amount"
+                    android:text="Total Today's amount  : "
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/today_bill"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tot_cur_bal"
+                    android:text="Total current balance:"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/total_curr_bal"
+                    android:layout_weight="1" />
+            </TableRow>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/back_home"
+                android:text="Back to Homepage"
+                android:background="@drawable/shape2"
+                android:layout_marginTop="40dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/update_bill"
+                android:textColor="#FFFFFF"
+                android:text="Update Info"
+                android:background="@drawable/shape2"
+                android:layout_marginTop="40dp"/>
+
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

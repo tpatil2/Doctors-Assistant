@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7EC0EE"
+    >
+
+    <TableRow
+        android:id="@+id/TableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1.9"
+            android:text="@string/BaddPatient"
+            android:textColor="#FFFFFF"
+            android:onClick="onButtonClick"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:text="SEARCH/EDIT"
+            android:background="@drawable/shape"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1.9"
+            android:text="@string/Bbillinginfo"
+            android:background="@drawable/shape"/>
+        <Button
+            android:id="@+id/btn_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:text="@string/Bappointments"
+            android:background="@drawable/shape"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/Bcontact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1.9"
+            android:textColor="#FFFFFF"
+            android:text="CONTACT US"
+            android:onClick="onButtonClick"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:text="LOGOUT"
+            android:background="@drawable/shape"/>
+
+
+    </TableRow>
+
+</TableLayout>

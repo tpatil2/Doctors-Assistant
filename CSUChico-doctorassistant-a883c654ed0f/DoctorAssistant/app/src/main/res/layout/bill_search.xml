@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/blue">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/textView2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Add Billing Information"
+                android:id="@+id/textView2"
+                android:layout_marginTop="50dp"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/patient_bill"
+                        android:text="Patient Id : "
+                        android:layout_marginTop="100dp"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:id="@+id/pat_id_billQ"
+                        android:layout_weight="1"
+                        android:layout_marginTop="100dp"/>
+
+
+
+                </TableRow>
+
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/search_billQ"
+                    android:text="Search"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/shape2"
+                    android:layout_marginTop="40dp"/>
+
+            </TableLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

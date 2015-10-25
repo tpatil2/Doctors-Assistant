@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/drawable">
+
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="300dp"
+       android:textSize="23dp"
+       android:text="Contact:Rahul Shinde
+       Tejas Patil
+       Email:
+       rshinde2007@gmail.com,
+       tejasp11@gmail.com"
+
+       />
+
+</LinearLayout>
